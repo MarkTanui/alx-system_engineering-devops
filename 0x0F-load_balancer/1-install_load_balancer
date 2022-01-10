@@ -10,8 +10,8 @@ mode http
 default_backend webservers
 backend webservers
 balance roundrobin
-server 2120-web-01 34.75.15.109:80 check
-server 2120-web-02 35.227.52.42:80 check
+server 479-web-01 34.73.183.163 check
+server 479-web-02 34.231.247.198 check
 "
 echo "$setup" >> /etc/haproxy/haproxy.cfg
 echo "ENABLED=1" >> /etc/default/haproxy
