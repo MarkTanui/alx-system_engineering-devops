@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 #Use ssh to connect to server using the private key ~/.ssh/rsa_key with ubuntu
-ssh -i ~/.ssh/rsa_key ubuntu@34.73.183.163
+ssh -i ~/.ssh/school ubuntu@34.73.183.163
