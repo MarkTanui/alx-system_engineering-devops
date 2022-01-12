@@ -11,8 +11,8 @@ frontend  mark-alx-frontend
         default_backend mark-alx-backend
 backend mark-alx-backend
         balance roundrobin
-        server 479-web-01 34.73.183.163 check
-        server 479-web-02 34.231.247.298 check
+        server 479-web-01 34.73.183.163:80 check
+        server 479-web-02 34.231.247.198:80 check
 "
  echo "$server_config" >> /etc/haproxy/haproxy.cfg
 
