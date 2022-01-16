@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#script with the minimum number of commands to automate a fix.
+rm /etc/nginx/sites-enabled/default
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx restart
