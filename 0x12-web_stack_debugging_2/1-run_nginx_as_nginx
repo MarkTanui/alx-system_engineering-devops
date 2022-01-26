@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Bash script nginx must be running as nginx user, listening on all active IPs on port 8080 \
+# cannot use apt-get remove
+pkill apache2
+chmod 644 /etc/nginx/nginx.conf
+sed -i 's/80 default_server/8080 default_server/' /etc/nginx/sites-available/default
+sudo -u nginx service nginx restart
